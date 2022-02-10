@@ -1,0 +1,85 @@
+.navbar{
+    position: relative;
+    padding: 15px;
+    background-color: rgba(77, 77, 77, 0.993);
+}
+.navbar_menu_btn{
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+}
+.navbar_menu_btn_element{
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 3px;
+    background-color: #FFF;
+    transition: 0.4s ease all;
+}
+.navbar_menu_btn_element::before{
+    z-index: 3;
+    position: absolute;
+    display: block;
+    top: -7px;
+    content:" ";
+    width: 24px;
+    height: 3px;
+    background-color: #FFF;
+    transition: 0.4s ease all;
+}
+.navbar_menu_btn_element::after{
+    z-index: 3;
+    position: absolute;
+    display: block;
+    top: 7px;
+    content:" ";
+    width: 24px;
+    height: 3px;
+    background-color: #FFF;
+    transition: 0.4s ease all;
+}
+.active{
+    opacity: 1;
+    background: none;
+}
+.active::before{
+    transform: rotate(-45deg);
+    top: 0px;
+}
+.active::after{
+    transform: rotate(45deg);
+    top: 0px;
+}
+.menu{
+    position: absolute;
+    width: 65vw;
+    height: calc(100vh - 55px);
+    background-color: #FFF;
+    animation-name: menu_animation;
+    animation-duration: 0.6s;
+    padding: 35px;
+    font-size: 25px;
+}
+.menu_element{
+    margin-bottom: 4vh;
+    font-style: Arial, Helvetica, sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+@keyframes menu_animation {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes menu_animation_back {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+}

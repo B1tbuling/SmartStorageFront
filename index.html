@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/charts.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/co2.css" rel="stylesheet">
+</head>
+<body class="body">
+    <header>
+        <div class="navbar">
+            <button class="navbar_menu_btn">
+                <span class="navbar_menu_btn_element"></span>
+            </button>
+        </div>
+        <div class="menu" style="display: none;">
+            <div class="menu_element">
+                <a>
+                    Температура и Влажность
+                </a>
+            </div>
+            <div class="menu_element">
+                <a href="co2">
+                    Уровень CO<sub>2</sub>
+                </a>
+            </div>
+            <div class="menu_element">
+                <a href="employees">
+                    Сотрудники 
+                </a>
+            </div>
+            <div class="menu_element">
+                <a>
+                    Статистика
+                </a>
+            </div>
+            <div class="menu_element">
+                <a>
+                    О приложении
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="conteiner">
+        <div class="graph_wrapper">
+            <div class="graph_statistics">
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="width: 50%; margin: 15px 8px 15px 10px;">
+                        <div class="statistics_background_circle" style="background-color: rgb(223, 105, 58);">
+                            <div class="statistics_front_circle" style="background-color: rgba(247, 122, 73, 0.897)">
+                                <div style="display: flex; flex-direction: column; width: 100%;">
+                                    <div class="statistics_text_style">
+                                        Температура
+                                    </div>
+                                    <div class="statistics_number_style">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 50%; margin: 15px 10px 15px 8px;">
+                        <div class="statistics_background_circle" style="background-color: rgb(23, 180, 154);">
+                            <div class="statistics_front_circle" style="background-color: rgb(6, 197, 172);">
+                                <div style="display: flex; flex-direction: column; width: 100%;">
+                                    <div class="statistics_text_style">
+                                        Влажность
+                                    </div>
+                                    <div class="statistics_number_style">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="chart">
+                    <canvas id="myChartTemp"></canvas>
+                </div>
+                <div class="button_day_wrapper">
+                    <div class="button_day" style="background-color: rgb(247, 122, 73)">7d</div>
+                    <div class="button_day" style="background-color: rgb(247, 122, 73)">3d</div>
+                    <div class="button_day" style="background-color: rgb(247, 122, 73)">1d</div>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="chart">
+                    <canvas id="myChartHum"></canvas>
+                </div>
+                <div class="button_day_wrapper">
+                    <div class="button_day" style="background-color: rgb(6, 197, 172)">7d</div>
+                    <div class="button_day" style="background-color: rgb(6, 197, 172)">3d</div>
+                    <div class="button_day" style="background-color: rgb(6, 197, 172)">1d</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+    <script src="chartTemp.js"></script>
+    <script src="chartHum.js"></script>
+    <script src="menu.js"></script>    
+</body>
+</html>
