@@ -5,8 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../styles/base.css" rel="stylesheet">
+    <link href="../styles/header.css" rel="stylesheet">
+    <link href="../styles/cards.css" rel="stylesheet">
 </head>
-<body>
-    employees
+<body class="body">
+    <header>
+        <div class="navbar">
+            <button class="navbar_menu_btn">
+                <span class="navbar_menu_btn_element"></span>
+            </button>
+        </div>
+        <div class="menu" style="display: none;">
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="../statistic/temp.svg" class="image_size">
+                </div>
+                <div>
+                    <a href="/">
+                        Температура и Влажность
+                    </a>
+                </div>
+            </div>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="../statistic/smoke.svg" class="image_size">
+                </div>
+                <a href="../co" >
+                    Уровень CO
+                </a>
+            </div>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="../statistic/address-card-solid.svg" class="image_size">
+                </div>
+                <div>
+                    <a href="../employees">
+                        Сотрудники 
+                    </a>
+                </div>
+            </div>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="../statistic/table-solid.svg" class="image_size">
+                </div>
+                <a>
+                    Статистика
+                </a>
+            </div>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="../statistic/bookmark-solid.svg" class="image_size">
+                </div>
+                <a href="../about">
+                    О приложении
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="conteiner">
+        
+        <!-- <div class ="card_wrapper">
+            <div style="border: 2px solid rgb(245, 98, 0); border-radius: 10px; padding: 10px">
+                <img src="../statistic/user-solid.svg" class="image_size" style="height: 100%; width: 50px;"> 
+            </div>
+            <div style="display: flex; justify-content: row; width: 100%; color: rgb(65, 65, 65); font-family: Arial, Helvetica, sans-serif; text-align: center;">
+                <div style="width: 65%; font-weight: bold;">
+                    <div style="height: 33%; font-size: 12px;">
+                        Ф.И.О и должность:
+                    </div>
+                    <div style="height: 33%; font-size: 15px;">
+                        Сорокин М.С. 
+                    </div>
+                    <div style="height: 33%; font-size: 15px;">
+                        Кладмэн
+                    </div>
+                </div>
+                <div style="width: 35%; padding-top: 15px;">
+                    <div>
+                        <img src="../statistic/yes.svg" class="image_size" style="height: 100%; width: 50px;"> 
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hogan.js/3.0.2/hogan.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/users.js"></script>
 </body>
 </html>

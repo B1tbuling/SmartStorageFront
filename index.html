@@ -8,7 +8,8 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/charts.css" rel="stylesheet">
     <link href="styles/header.css" rel="stylesheet">
-    <link href="styles/co2.css" rel="stylesheet">
+    <link href="styles/co.css" rel="stylesheet">
+    <meta name="referrer" content="strict-origin-when-cross-origin"/>
 </head>
 <body class="body">
     <header>
@@ -18,28 +19,47 @@
             </button>
         </div>
         <div class="menu" style="display: none;">
-            <div class="menu_element">
-                <a>
-                    Температура и Влажность
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="statistic/temp.svg" class="image_size">
+                </div>
+                <div>
+                    <a href="/">
+                        Температура и Влажность
+                    </a>
+                </div>
+            </div>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="statistic/smoke.svg" class="image_size">
+                </div>
+                <a href="co" >
+                    Уровень CO
                 </a>
             </div>
-            <div class="menu_element">
-                <a href="co2">
-                    Уровень CO<sub>2</sub>
-                </a>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="statistic/address-card-solid.svg" class="image_size">
+                </div>
+                <div>
+                    <a href="employees">
+                        Сотрудники 
+                    </a>
+                </div>
             </div>
-            <div class="menu_element">
-                <a href="employees">
-                    Сотрудники 
-                </a>
-            </div>
-            <div class="menu_element">
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="statistic/table-solid.svg" class="image_size">
+                </div>
                 <a>
                     Статистика
                 </a>
             </div>
-            <div class="menu_element">
-                <a>
+            <div class="menu_element_test">
+                <div class="card_location">
+                    <img src="statistic/bookmark-solid.svg" class="image_size">
+                </div>
+                <a href="about">
                     О приложении
                 </a>
             </div>
@@ -56,8 +76,7 @@
                                     <div class="statistics_text_style">
                                         Температура
                                     </div>
-                                    <div class="statistics_number_style">
-                                        32
+                                    <div class="statistics_number_style_temp">
                                     </div>
                                 </div>
                             </div>
@@ -70,8 +89,7 @@
                                     <div class="statistics_text_style">
                                         Влажность
                                     </div>
-                                    <div class="statistics_number_style">
-                                        10%
+                                    <div class="statistics_number_style_hum">
                                     </div>
                                 </div>
                             </div>
@@ -84,9 +102,9 @@
                     <canvas id="myChartTemp"></canvas>
                 </div>
                 <div class="button_day_wrapper">
-                    <div class="button_day" style="background-color: rgb(247, 122, 73)">7d</div>
-                    <div class="button_day" style="background-color: rgb(247, 122, 73)">3d</div>
-                    <div class="button_day" style="background-color: rgb(247, 122, 73)">1d</div>
+                    <div class="button_day_temp temp7d" style="background-color: rgb(247, 122, 73);">7d</div>
+                    <div class="button_day_temp temp3d" style="background-color: rgb(247, 122, 73);">3d</div>
+                    <div class="button_day_temp temp1d" style="background-color: rgb(247, 122, 73); opacity: 0.5;">1d</div>
                 </div>
             </div>
             <div class="graph">
@@ -94,9 +112,9 @@
                     <canvas id="myChartHum"></canvas>
                 </div>
                 <div class="button_day_wrapper">
-                    <div class="button_day" style="background-color: rgb(6, 197, 172)">7d</div>
-                    <div class="button_day" style="background-color: rgb(6, 197, 172)">3d</div>
-                    <div class="button_day" style="background-color: rgb(6, 197, 172)">1d</div>
+                    <div class="button_day_hum hum7d" style="background-color: rgb(6, 197, 172)">7d</div>
+                    <div class="button_day_hum hum3d" style="background-color: rgb(6, 197, 172)">3d</div>
+                    <div class="button_day_hum hum1d" style="background-color: rgb(6, 197, 172); opacity: 0.5;">1d</div>
                 </div>
             </div>
         </div>
@@ -104,8 +122,8 @@
     <footer>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
-    <script src="chartTemp.js"></script>
-    <script src="chartHum.js"></script>
-    <script src="menu.js"></script>    
+    <script src="js/chartTemp.js"></script>
+    <script src="js/chartHum.js"></script>
+    <script src="js/menu.js"></script>    
 </body>
 </html>
