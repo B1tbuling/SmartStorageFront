@@ -1,12 +1,12 @@
 let curentChartHoursHum = 0;
 
 
-createChartButton(".hum1d", "button_day_hum", setChartHum, 24, 12)
-createChartButton(".hum3d", "button_day_hum", setChartHum, 72, 12)
-createChartButton(".hum7d", "button_day_hum", setChartHum, 168, 14)
+createChartButton(".hum1d", ".button_day_hum", setChartHum, 24, 12)
+createChartButton(".hum3d", ".button_day_hum", setChartHum, 72, 12)
+createChartButton(".hum7d", ".button_day_hum", setChartHum, 168, 14)
 
 
-async function drawCircularTemp(){
+async function drawCircularHum(){
     let resp = await fetch("http://127.0.0.1:8000/hum?limit=1")
     data = await resp.json()
     document.querySelector(".statistics_number_style_hum").innerText = data[0].Humidity
@@ -24,11 +24,11 @@ async function loadDataHum(hours,amount){
 
 async function drawChatHum(data){
    var ctxHum = document.getElementById("myChartHum").getContext('2d');
-    drawChart(data, ctxHum, 'Значение влажности в %', 'rgb(223, 105, 58)')
+    drawChart(data, ctxHum, 'Значение влажности в %', 'rgb(23, 180, 154)')
 }
 
 async function setChartHum(hours, amount){
-    drawCircularTemp()
+    drawCircularHum()
     if (curentChartHoursHum === hours){return}
     curentChartHoursHum = hours;
     let dataHum = await loadDataHum(hours,amount);

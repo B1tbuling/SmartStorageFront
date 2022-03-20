@@ -1,9 +1,9 @@
 let curentChartHours = 0
 
 
-createChartButton(".co1d", "button_day_co", setChartCo, 24, 12)
-createChartButton(".co3d", "button_day_co", setChartCo, 72, 12)
-createChartButton(".co7d", "button_day_co", setChartCo, 168, 14)
+createChartButton(".co1d", ".button_day_co", setChartCo, 24, 12)
+createChartButton(".co3d", ".button_day_co", setChartCo, 72, 12)
+createChartButton(".co7d", ".button_day_co", setChartCo, 168, 14)
 
 
 async function drawCircularCO(){

@@ -1,10 +1,8 @@
-let curentChartHoursTemp = 24
+let curentChartHoursTemp = 0
 
-
-createChartButton(".temp1d", "button_day_temp", setChartTemp, 24, 12)
-createChartButton(".temp3d", "button_day_temp", setChartTemp, 72, 12)
-createChartButton(".temp7d", "button_day_temp", setChartTemp, 168, 14)
-
+createChartButton(".temp1d", ".button_day_temp", setChartTemp, 24, 12)
+createChartButton(".temp3d", ".button_day_temp", setChartTemp, 72, 12)
+createChartButton(".temp7d", ".button_day_temp", setChartTemp, 168, 14)
 
 
 async function drawCircularTemp(){
@@ -26,7 +24,7 @@ async function loadDataTemp(hours,amount){
 
 async function drawChatTemp(data){
     var ctxTemp = document.getElementById('myChartTemp').getContext('2d');
-    drawChart(data, ctxTemp, 'Температура', 'green')
+    drawChart(data, ctxTemp, 'Температура', 'rgb(223, 105, 58)')
 }
 
 async function setChartTemp(hours, amount){
@@ -35,8 +33,6 @@ async function setChartTemp(hours, amount){
     curentChartHoursTemp = hours
     let dataDrowTemp = await loadDataTemp(hours,amount)
     drawChatTemp(dataDrowTemp)
-    console.log(1111)
 }
 
-
-let loadTempInterval = setInterval(setChartTemp, 10000, curentChartHoursTemp, 12)
+setChartTemp(24,12)
