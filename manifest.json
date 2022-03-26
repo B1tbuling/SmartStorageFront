@@ -1,0 +1,13 @@
+{
+    "name": "Smart Storage",
+    "short_name": "SS",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fafafa",
+    "orientation": "portrait-primary",
+    "icons":[{
+        "src": "/statistic/pwa.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    }]
+}

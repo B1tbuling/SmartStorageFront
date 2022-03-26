@@ -9,6 +9,7 @@
     <link href="styles/charts.css" rel="stylesheet">
     <link href="styles/header.css" rel="stylesheet">
     <link href="styles/co.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
     <meta name="referrer" content="strict-origin-when-cross-origin"/>
 </head>
 <body class="body">
@@ -18,10 +19,12 @@
                 <span class="navbar_menu_btn_element"></span>
             </button>
         </div>
-        <div class="menu" style="display: none;">
+        <div class="menu_background" style="display: none;">
+        </div>
+        <div class="menu" style="display: none; z-index: 1;">
             <div class="menu_element_test">
                 <div class="card_location">
-                    <img src="statistic/temp.svg" class="image_size">
+                    <img src="../statistic/temp.svg" class="image_size">
                 </div>
                 <div>
                     <a href="/">
@@ -68,8 +71,8 @@
     <main class="conteiner">
         <div class="graph_wrapper">
             <div class="graph_statistics">
-                <div style="display: flex; justify-content: space-between; width: 100%;">
-                    <div style="width: 50%; margin: 15px 8px 15px 10px;">
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <div style="width: 160px; margin: 15px 8px 15px 10px;">
                         <div class="statistics_background_circle" style="background-color: rgb(223, 105, 58);">
                             <div class="statistics_front_circle" style="background-color: rgba(247, 122, 73, 0.897)">
                                 <div style="display: flex; flex-direction: column; width: 100%;">
@@ -82,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 50%; margin: 15px 10px 15px 8px;">
+                    <div style="width: 160px; margin: 15px 10px 15px 8px;">
                         <div class="statistics_background_circle" style="background-color: rgb(23, 180, 154);">
                             <div class="statistics_front_circle" style="background-color: rgb(6, 197, 172);">
                                 <div style="display: flex; flex-direction: column; width: 100%;">
@@ -125,6 +128,7 @@
     <script src="js/baseChart.js"></script>
     <script src="js/chartTemp.js"></script>
     <script src="js/chartHum.js"></script>
-    <script src="js/menu.js"></script>    
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>      
 </body>
 </html>
