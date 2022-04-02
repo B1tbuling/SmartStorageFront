@@ -68,17 +68,35 @@
     </header>
     <main class="conteiner">
         <div style="margin-top: 20px; background-color: white; width: 100% - 20px; border-radius: 10px; padding: 20px; font-family: Arial, Helvetica, sans-serif; color: rgb(65, 65, 65);">
-            <div style="font-size: 25px; text-align: center; margin-bottom: 30px; font-weight: bold">
-                О приложении
+            <div style="margin-bottom: 20px; font-size: 19px; font-weight: bold">
+                Статистика о климате на складе
             </div>
-            <div style="margin-bottom: 35px; text-align: justify; font-size: 18px;">
-                SmartStorage – клиентская часть программно-аппаратного комплекса автоматического управления климатом на производственном складе. В данном мобильном pwa приложении реализована возможность узнавать температуру, влажность и уровень угарного газа в режиме реального времени, а также прослеживать по графикам измерения всех сенсоров в течении определенного времени.
+            <div style="display: flex; justify-items: normal; padding-bottom: 20px;">    
+                <div style="margin-right: 10px; font-size: 16px;">
+                    Период в днях: 
+                </div>
+                <input type="text" id="in1" size="40" style="width: 50px;">
             </div>
-            <div style="text-align: center;  font-size: 14px;"> 
-                Версия приложения: 0.0.8
+            <div style="display: flex; justify-content: center;">
+                <input class= "downloadSensor" type="button" id="but1" value="Скачать" style="border-radius: 10px; background-color: rgb(255, 129, 38); height: 30px; width: 100px; font-size: 20px; text-align: center; color: aliceblue;">
+            </div>
+        </div>
+        <div style="margin-top: 20px; background-color: white; width: 100% - 20px; border-radius: 10px; padding: 20px; font-family: Arial, Helvetica, sans-serif; color: rgb(65, 65, 65);">
+            <div style="margin-bottom: 20px; font-size: 19px; font-weight: bold">
+                Статистика активности работников
+            </div>
+            <div style="display: flex; justify-items: normal; padding-bottom: 20px;">    
+                <div style="margin-right: 10px; font-size: 16px;">
+                    Период в днях: 
+                </div>
+                <input type="text" id="in2" size="40" style="width: 50px;">
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <input class= "downloadUser" type="button" id="but2" value="Скачать" style="border-radius: 10px; background-color: rgb(255, 129, 38); height: 30px; width: 100px; font-size: 20px; text-align: center; color: aliceblue;">
             </div>
         </div>
     </main>
-    <script src="../js//menu.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/unloading.js"></script>
 </body>
 </html>

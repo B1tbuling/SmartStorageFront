@@ -31,8 +31,8 @@ async function loadUsers(){
         let template = Hogan.compile(cart_template)
         let html = template.render({
             Name: element.Name,
-            Position: element.Position,
-            Status: element.Exist ? '../statistic/yes.svg' : '../statistic/no.svg'
+            Position: element.position,
+            Status: element.exist ? '../statistic/yes.svg' : '../statistic/no.svg'
         })
         let html_el = document.createElement('div') 
         html_el.innerHTML = html
