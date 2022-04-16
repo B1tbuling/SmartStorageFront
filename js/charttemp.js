@@ -36,3 +36,5 @@ async function setChartTemp(hours, amount){
 }
 
 setChartTemp(24,12)
+
+let intervalTemp = setInterval(drawCircularTemp,1000)

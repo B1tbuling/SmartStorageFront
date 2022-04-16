@@ -35,3 +35,5 @@ async function setChartHum(hours, amount){
 }
 
 setChartHum(24,12);
+
+let intervalHum = setInterval(drawCircularHum,1000)

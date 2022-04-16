@@ -36,3 +36,5 @@ async function setChartCo(hours,amount){
 }
 
 setChartCo(24,12);
+
+let intervalCo = setInterval(drawCircularCO,1000)
