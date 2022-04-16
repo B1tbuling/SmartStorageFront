@@ -9,7 +9,7 @@ createChartButton(".hum7d", ".button_day_hum", setChartHum, 168, 14)
 async function drawCircularHum(){
     let resp = await fetch("http://45.93.200.127:8080/hum?limit=1")
     data = await resp.json()
-    document.querySelector(".statistics_number_style_hum").innerText = data[0].Humidity
+    document.querySelector(".statistics_number_style_hum").innerText = data[0].humidity
 }
 
 async function loadDataHum(hours,amount){
@@ -18,7 +18,6 @@ async function loadDataHum(hours,amount){
     data_time = arr.time
     data_hum = arr.hum
     data_time_1d = data_time.map((date_str) => `${new Date(date_str).getHours()}:${new Date(date_str).getMinutes() > 9 ? new Date(date_str).getMinutes() : '0' + new Date(date_str).getMinutes() }`)
-    // console.log(data_hum)
     return [data_time_1d, data_hum]
 }
 

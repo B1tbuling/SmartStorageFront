@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba9da97c-1449-4060-9232-cf0611c32fe2" name="Changes" comment="" />
+    <list default="true" id="ba9da97c-1449-4060-9232-cf0611c32fe2" name="Changes" comment="where is new upgrade">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/users.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +36,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647807839175</updated>
-      <workItem from="1648916251020" duration="714000" />
+      <workItem from="1648916251020" duration="1326000" />
+      <workItem from="1648918538699" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="where is new upgrade">
       <created>1647808130822</created>

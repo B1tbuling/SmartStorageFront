@@ -8,7 +8,7 @@ createChartButton(".temp7d", ".button_day_temp", setChartTemp, 168, 14)
 async function drawCircularTemp(){
     let resp = await fetch("http://45.93.200.127:8080/temp?limit=1")
     data = await resp.json()
-    document.querySelector(".statistics_number_style_temp").innerText = data[0].Temperature
+    document.querySelector(".statistics_number_style_temp").innerText = data[0].temperature
 }
 
 async function loadDataTemp(hours,amount){
