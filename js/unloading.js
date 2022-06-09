@@ -1,7 +1,7 @@
 let button1 = document.getElementById("but1")
 let button2 = document.getElementById("but2")
-    button1.onclick = sensor;
-    button2.onclick = user;
+button1.onclick = sensor;
+button2.onclick = user;
 
 async function handleButtonClick(url) {
     fetch(url, {method: 'GET',headers: {'Content-Type': 'text/csv',},})
@@ -22,11 +22,11 @@ async function handleButtonClick(url) {
 async function sensor(){
     let textInput = document.getElementById("in1");
     let input_one = textInput.value;
-    handleButtonClick(`http://45.93.200.127:8080/getStatisticSensor?period=${input_one}`)
+    handleButtonClick(`http://45.93.200.185:22/getStatisticSensor?period=${input_one}`)
 }
 
 async function user(){
     let textInput = document.getElementById("in2");
     let input_one = textInput.value;
-    handleButtonClick(`http://45.93.200.127:8080/getStatisticUser?period=${input_one}`)
+    handleButtonClick(`http://45.93.200.185:22/getStatisticUser?period=${input_one}`)
 }

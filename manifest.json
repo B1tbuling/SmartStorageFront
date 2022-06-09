@@ -6,7 +6,7 @@
     "background_color": "#fafafa",
     "orientation": "portrait-primary",
     "icons":[{
-        "src": "/statistic/pwa.png",
+        "src": "/statistic/pwa-144x144.png",
         "type": "image/png",
         "sizes": "144x144"
     }]

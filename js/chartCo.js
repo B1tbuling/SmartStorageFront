@@ -7,13 +7,13 @@ createChartButton(".co7d", ".button_day_co", setChartCo, 168, 14)
 
 
 async function drawCircularCO(){
-    let resp = await fetch("http://45.93.200.127:8080/co?limit=1")
+    let resp = await fetch("http://45.93.200.185:22/co?limit=1")
     data = await resp.json()
-    document.querySelector(".co2_text").innerText = data[0].co
+    document.querySelector(".co2_text").innerText = Math.floor(data[0].co)
 }
 
 async function loadData(hours,amount){
-    resp = await fetch(`http://45.93.200.127:8080/getSensorsData?period=${hours}%20hours&amount=${amount}`)
+    resp = await fetch(`http://45.93.200.185:22/getSensorsData?period=${hours}%20hours&amount=${amount}`)
     arr = await resp.json()
     data_time = arr.time
     data_co = arr.co

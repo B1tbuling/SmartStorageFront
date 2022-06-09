@@ -24,7 +24,7 @@ let cart_template = '<div class ="card_wrapper">'+
 
 
 async function loadUsers(){
-    resp = await fetch(`http://45.93.200.127:8080/users`)
+    resp = await fetch(`http://45.93.200.185:22/users`)
     data = await resp.json()
     document.querySelector(".conteiner").innerHTML = null
     data.forEach(element => {
@@ -42,4 +42,4 @@ async function loadUsers(){
 
 loadUsers()
 
-let loadUserInterval = setInterval(loadUsers, 10000)
+// let loadUserInterval = setInterval(loadUsers, 10000)
