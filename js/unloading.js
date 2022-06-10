@@ -22,11 +22,11 @@ async function handleButtonClick(url) {
 async function sensor(){
     let textInput = document.getElementById("in1");
     let input_one = textInput.value;
-    handleButtonClick(`http://45.93.200.185:22/getStatisticSensor?period=${input_one}`)
+    handleButtonClick(`http://45.93.200.185:8080/getStatisticSensor?period=${input_one}`)
 }
 
 async function user(){
     let textInput = document.getElementById("in2");
     let input_one = textInput.value;
-    handleButtonClick(`http://45.93.200.185:22/getStatisticUser?period=${input_one}`)
+    handleButtonClick(`http://45.93.200.185:8080/getStatisticUser?period=${input_one}`)
 }

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba9da97c-1449-4060-9232-cf0611c32fe2" name="Changes" comment="where is new upgrade v1 front">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ba9da97c-1449-4060-9232-cf0611c32fe2" name="Changes" comment="where is a new upgrade" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SmartStorageAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,6 +42,7 @@
       <workItem from="1651425630992" duration="9000" />
       <workItem from="1651500874803" duration="17000" />
       <workItem from="1651501123276" duration="680000" />
+      <workItem from="1654775506201" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="where is new upgrade">
       <created>1647808130822</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650150042357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="where is a new upgrade">
+      <created>1654775549378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654775549379</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +101,7 @@
     <MESSAGE value="..." />
     <MESSAGE value="where is new upgrade..." />
     <MESSAGE value="where is new upgrade v1 front" />
-    <option name="LAST_COMMIT_MESSAGE" value="where is new upgrade v1 front" />
+    <MESSAGE value="where is a new upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="where is a new upgrade" />
   </component>
 </project>

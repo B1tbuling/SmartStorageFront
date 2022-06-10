@@ -24,7 +24,7 @@ let cart_template = '<div class ="card_wrapper">'+
 
 
 async function loadUsers(){
-    resp = await fetch(`http://45.93.200.185:22/users`)
+    resp = await fetch(`http://45.93.200.185:8080/users`)
     data = await resp.json()
     document.querySelector(".conteiner").innerHTML = null
     data.forEach(element => {
